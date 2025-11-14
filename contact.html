@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - KINOLOVE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Graphik+Kinopoisk+LC+Web+SB+Regular&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .info-container {
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+        }
+
+        .contact-container {
+            padding-top: 150px;
+        }
+
+        body.light-theme #contactUs,
+        body.light-theme #contactHappy,
+        body.light-theme #contactOpenHours,
+        body.light-theme #contactDateTime,
+        body.light-theme #contactAddressTitle,
+        body.light-theme #contactAddress {
+            color: black;
+        }
+
+        body.dark-theme #contactUs,
+        body.dark-theme #contactHappy,
+        body.dark-theme #contactOpenHours,
+        body.dark-theme #contactDateTime,
+        body.dark-theme #contactAddressTitle,
+        body.dark-theme #contactAddress {
+            color: white;
+        }
+
+        #successMessage {
+            display: none;
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="light-theme">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white fs-2" href="#">KIN♡LOVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="index.html" id="homeLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="movies.html" id="moviesLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="tvshows.html" id="tvShowsLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="contact.html" id="contactLink"></a>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <button id="languageBtn" class="btn btn-outline-light"></button>
+                    <button id="themeBtn" class="btn btn-outline-light"></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container contact-container">
+        <div class="contact-header">
+            <h1 id="contactUs"></h1>
+            <p id="contactHappy"></p>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input id="fullName" type="text" placeholder="Full Name" required>
+                        <input id="email" type="email" placeholder="Email" required>
+                        <input id="phone" type="tel" placeholder="Phone Number" required>
+                        <textarea id="message" placeholder="Your message here" rows="5" required></textarea>
+                        <button type="submit" id="sendMessage">SEND MESSAGE</button>
+                    </form>
+
+                    <div id="successMessage" class="alert alert-success mt-4 text-center d-none">
+                        Your message has been sent successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-container">
+            <div>
+                <h4 id="contactOpenHours"></h4>
+                <p id="contactDateTime"></p>
+            </div>
+            <div>
+                <h4 id="contactAddressTitle"></h4>
+                <p id="contactAddress"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/components/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

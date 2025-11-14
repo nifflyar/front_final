@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINOLOVE | TV Shows</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/card.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Graphik+Kinopoisk+LC+Web+SB+Regular&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .tvshow,
+        .search {
+            padding-top: 100px;
+        }
+
+        .light-theme .search input {
+            background-color: #333;
+            color: black;
+            border: 1px solid #ddd;
+        }
+
+        .light-theme .search input::placeholder {
+            color: #888;
+        }
+
+        .dark-theme .search input {
+            background-color: white;
+            color: white;
+            border: 1px solid #555;
+        }
+
+        .dark-theme .search input::placeholder {
+            color: #aaa;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="light-theme">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand text-white fs-2" href="#">KIN♡LOVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="index.html" id="homeLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="movies.html" id="moviesLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" href="tvshows.html" id="tvShowsLink"></a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="contact.html" id="contactLink"></a>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <button id="languageBtn" class="btn btn-outline-light"></button>
+                    <button id="themeBtn" class="btn btn-outline-light"></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 search">
+        <input type="text" id="searchInput" class="form-control" placeholder="Поиск..." />
+    </div>
+
+    <div class="container my-4 tvshow">
+        <div class="row" id="tvShowsContainer">
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById('tvShowsLink').style.fontWeight = "bold";
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/components/tvshowLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

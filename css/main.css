@@ -1,0 +1,48 @@
+body {
+    background-color: #000000;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #007bff;
+    color: black;
+}
+
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #ff8a00;
+    color: white;
+}
+
+.light-theme  p, h1, h2, h3, h4{
+    color: black;
+}
+.dark-theme p, h1, h2, h3 , h4{
+    color: white;
+}
+
+
+.content {
+    padding: 40px 0;
+}
+
+.content h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    text-align: center;
+}

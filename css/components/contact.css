@@ -1,0 +1,87 @@
+ .contact-container {
+     padding: 60px 0;
+ }
+
+ .contact-header {
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+ .contact-header h1 {
+     font-size: 3rem;
+     font-weight: bold;
+ }
+
+ .contact-header p {
+     font-size: 1.2rem;
+     color: #ccc;
+ }
+
+ .contact-form {
+     background-color: rgba(0, 0, 0, 0.7);
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 15px;
+     padding: 12px;
+     width: 100%;
+     font-size: 1rem;
+ }
+
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+     border-color: #ff8a00;
+     outline: none;
+ }
+
+ .contact-form button {
+     background-color: #ff8a00;
+     color: #fff;
+     padding: 12px 30px;
+     font-size: 1.1rem;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+ }
+
+ .contact-form button:hover {
+     background-color: #e67600;
+ }
+
+ .social-icons {
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .social-icons a {
+     color: #ff8a00;
+     font-size: 2rem;
+     margin: 0 15px;
+     transition: color 0.3s ease;
+ }
+
+ .social-icons a:hover {
+     color: #e67600;
+ }
+
+ .info-container {
+     margin-top: 50px;
+     text-align: center;
+ }
+
+ .info-container h4 {
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+ }
+
+ .info-container p {
+     font-size: 1rem;
+     color: #ccc;
+ }
